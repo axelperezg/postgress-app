@@ -39,6 +39,18 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     Dashboard
                                 </NavLink>
+                                <NavLink
+                                    :href="route('sectors.index')"
+                                    :active="route().current('sectors.index')"
+                                >
+                                    Sectores
+                                </NavLink>
+                                <NavLink
+                                    :href="route('institutions.index')"
+                                    :active="route().current('institutions.index')"
+                                >
+                                    Instituciones
+                                </NavLink>
                             </div>
                         </div>
 
@@ -146,6 +158,20 @@ const showingNavigationDropdown = ref(false);
                         >
                             Dashboard
                         </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('sectors.index')"
+                            :active="route().current('sectors.index')"
+                        >
+                            Sectores
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('institutions.index')"
+                            :active="route().current('institutions.index')"
+                        >
+                            Instituciones
+                        </ResponsiveNavLink>
+
+
                     </div>
 
                     <!-- Responsive Settings Options -->
